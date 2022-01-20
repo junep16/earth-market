@@ -2,7 +2,97 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: paleturquoise;
-  height: 20vh;
-  
+  background-color: #ebebeb;
+  height: 15vh; 
+  width: 100%;
+}
+nav {
+  width: 100%;
+}
+.top-nav { 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  box-sizing: border-box;
+  padding: 0 8%;
+} 
+.top-nav img { 
+  margin-right: 20px;
+  height: 40px;
+} 
+.top-nav li:first-child {
+  display: flex; 
+  align-items: center;
+  width: 90%;
+}
+.top-nav li:nth-child(2) {
+  display: flex;  
+  align-items: center;
+}
+
+/* 검색 input */
+.input-search-wrap {
+  display:flex; 
+  justify-content: center;
+  align-items: center;  
+  background: #FFF; 
+  border: 2.5px solid #218060; 
+  border-radius: 50px; 
+  width: 50%;
+}
+.input-search-wrap label {
+  display: none;
+}
+.input-search-wrap input {
+  width: 100%;
+  height: 100%; 
+  border-radius: 50px;
+  border-style: none;
+  box-sizing: border-box;
+  padding: 22px 13px; 
+}
+.input-search-wrap button {
+  background: transparent url("../../icon/icon-search.svg") no-repeat 0 0 / contain; 
+  border-style: none;
+  cursor: pointer;
+  width: 20px;
+  height: 20px; 
+  margin: 10px;
+} 
+
+/* 오른쪽 상단 버튼*/
+.nav-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  width: 80px;
+  height: 60px;
+  box-sizing: border-box;
+  padding: 5px;
+}
+.nav-button.basket button{
+  background: transparent url("../../icon/icon-shopping-cart.svg") no-repeat 0 0 / contain; 
+  border-style: none;
+  cursor: pointer;
+  width: 40px;
+  height: 30px; 
+  padding: 0; 
+  margin-left: 9px;
+} 
+.nav-button.mypage button{
+  background: transparent url("../../icon/icon-user.svg") no-repeat 0 0 / contain; 
+  border-style: none;
+  cursor: pointer;
+  width: 40px;
+  height: 30px; 
+  padding: 0; 
+  margin-left: 10px;
+} 
+.nav-button.basket span, 
+.nav-button.mypage span {
+  font-size: 12px;
+  color: #767676;  
 }
