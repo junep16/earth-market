@@ -1,0 +1,80 @@
+.image-slider {
+  position: relative;
+}
+
+/*  이미지 슬라이더  */
+.image-slider-window {
+  position: relative;
+  width: 100vw;
+  height: 30vw;
+  background: palegoldenrod;
+  overflow: hidden;
+}
+.image-slider-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: left 0.5s ease-out; 
+}
+.image-wrap { 
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.image {
+  width: 100%;
+  height: auto;
+}
+
+/* 이미지 슬라이더 하단버튼 */
+.button-control-wrap {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  position:absolute; 
+  top: 95%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+  width: 200px;
+  height: 30px;
+}
+.button-control-wrap .slide-button {
+  margin: 0;
+  padding: 0;
+  width: 8px;
+  height: 8px;
+  border-radius: 6px;
+  background: #FFF; 
+  cursor: pointer;
+}
+
+/* 이미지 슬라이더 중앙버튼*/
+.subbutton-control-wrap {
+  width: 100%; 
+  height: 200px;
+  background: palegreen;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+}
+.subbutton-control-wrap .slide-arrow.left {
+  background: transparent url("../../icon/icon-swiper-1.svg") no-repeat 0 0 / contain; 
+  border-style: none;
+  cursor: pointer; 
+  width: 10%;
+  height: 100%;
+}
+.subbutton-control-wrap .slide-arrow.right {
+  background: transparent url("../../icon/icon-swiper-2.svg") no-repeat 0 0 / contain; 
+  border-style: none;
+  cursor: pointer; 
+  width: 10%;
+  height: 100%;
+}
