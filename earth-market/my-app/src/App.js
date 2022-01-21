@@ -1,6 +1,7 @@
-import Home from "./Pages/home/Home"; 
+import Home from "Pages/home/Home"; 
 import reset from "styled-reset";
 import { createGlobalStyle } from "styled-components"; 
+import GlobalFonts from "./fonts/fonts"; 
 
 const GlobalStyle = createGlobalStyle`
   ${reset}; 
@@ -14,7 +15,7 @@ const GlobalStyle = createGlobalStyle`
   }
  * {
   box-sizing: border-box;
-  font-family: 'Noto Sans KR', sans-serif;
+  font-family: 'KRRegular'
   }
 `;
 
@@ -22,6 +23,7 @@ const GlobalStyle = createGlobalStyle`
 function App() {
   return (
     <div className="App">
+      <GlobalFonts /> 
       <GlobalStyle />
       <header className="App-header">  
       </header>

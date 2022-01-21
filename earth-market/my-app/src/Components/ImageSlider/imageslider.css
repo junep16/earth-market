@@ -54,8 +54,7 @@
 /* 이미지 슬라이더 중앙버튼*/
 .subbutton-control-wrap {
   width: 100%; 
-  height: 200px;
-  background: palegreen;
+  height: 200px; 
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -77,4 +76,7 @@
   cursor: pointer; 
   width: 10%;
   height: 100%;
+}
+.subbutton-control-wrap .slide-arrow:hover {
+  opacity: 0.33;
 }
