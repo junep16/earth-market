@@ -5,13 +5,41 @@ export default function LoginForm() {
   return(
     <div>  
       <Form>
-        <label for="input-id"></label>
-        <input type="text" id="input-id" placeholder="아이디"></input>
-        <label for="input-pw"></label>
-        <input type="password" id="input-pw" placeholder="비밀번호"></input>
-        <span>아이디 또는 비밀번호가 일치하지 않습니다.</span>
-        <button type="button">로그인</button>
+        <div>
+          <label for="input-id"></label>
+          <input type="text" id="input-id" placeholder="아이디"></input>
+          <button type="button">중복확인</button>
+        </div>
+        <label for="input-pw">비밀번호</label>
+        <input type="password" id="input-pw"></input>
+        <label for="input-pw">비밀번호 재확인</label>
+        <input type="password" id="input-pw"></input> 
+        <label for="input-name">이름</label>
+        <input type="text" id="input-name"></input> 
+        <div> 
+          <label for="input-phone">휴대폰 번호</label>
+          <input type="text" id="input-phone" placeholder="010"></input>
+          <ul>
+            <li></li>
+          </ul> 
+          <input type="text" id="input-phone"></input>
+          <input type="text" id="input-phone"></input>
+        </div>
+        <div>
+          <label for="input-email">이메일</label>
+          <input type="text" id="input-email"></input> 
+          <span>@</span>
+          <input type="text" id="input-email"></input> 
+        </div>
+        <label for="input-company-no">사업자 번호</label>
+        <input type="text" id="input-company-no"></input>
+        <label for="input-company-name">스토어 이름</label>
+        <input type="text" id="input-company-name"></input> 
       </Form> 
+      <label for=""></label>
+      <input type="checkbox"></input>
+      <p>호두샵의 이용약관 및 개인정보처리방침에 대한 내용을 확인하였고 동의합니다.</p>
+      
     </div>
   )
 }
@@ -26,7 +54,7 @@ const Form = styled.form`
   padding: 8% 5%;  
   z-index: 30; 
   input {
-    height: 60px; 
+    height: 40px; 
     font-size: 16px; 
     color: 767676;  
     margin-bottom: 5px; 
@@ -38,7 +66,7 @@ const Form = styled.form`
     line-height: 2; 
   }
   button {
-    height: 60px; 
+    height: 40px; 
     background-color: #218060; 
     color: #FFF; 
     font-size: 18px; 
