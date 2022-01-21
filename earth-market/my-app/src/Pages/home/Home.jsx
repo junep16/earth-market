@@ -2,7 +2,7 @@ import Navigation from "Components/Navigation/Navigation";
 import ImageSlider from "Components/ImageSlider/ImageSlider";
 import ProductContainer from "Components/ProductContainer/ProductContainer";
 import Footer from "Components/Footer/Footer";
-import GlobalFonts from "fonts/fonts"; 
+import GlobalFonts from "fonts/GlobalStyle"; 
 
 export default function Homepage() {   
     return (
