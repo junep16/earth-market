@@ -1,18 +1,22 @@
 import Home from "Pages/home/Home"; 
+import Join from "Pages/join/Join"; 
 import GlobalStyle from "fonts/GlobalStyle"; 
+import { BrowserRouter, Route } from "react-router-dom";
 
 function App() {
-  return (
+  return ( 
     <div> 
       <GlobalStyle/>
-      <header className="App-header">  
+      <header>  
       </header>
       <main>
-        <Home></Home>
+      <BrowserRouter>
+        <Route path="/" exact component={Home}/>  
+        <Route path="/join" exact component={Join}/>  
+      </BrowserRouter>
       </main>
     </div>
   );
 }
 
 export default App;
-
