@@ -33,13 +33,15 @@ nav {
 
 /* 검색 input */
 .input-search-wrap {
+  position: relative;
   display:flex; 
   justify-content: center;
   align-items: center;  
   background: #FFF; 
   border: 2.5px solid #218060; 
   border-radius: 50px; 
-  width: 50%;
+  width: 35%;
+  height: 50px;
 }
 .input-search-wrap label {
   display: none;
@@ -53,6 +55,9 @@ nav {
   padding: 22px 13px; 
 }
 .input-search-wrap button {
+  position: absolute;
+  top: 9%;
+  right: 3%; 
   background: transparent url("../../icon/icon-search.svg") no-repeat 0 0 / contain; 
   border-style: none;
   cursor: pointer;

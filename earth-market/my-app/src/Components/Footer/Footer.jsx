@@ -77,7 +77,7 @@ const Navigation = styled.ul`
   display: flex; 
   align-items: center;
   font-size: 14px; 
-  width: 40%; 
+  width: 50%; 
   justify-content: space-between; 
   li:hover {
     opacity: 0.3; 
