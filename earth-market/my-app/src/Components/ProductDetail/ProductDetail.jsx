@@ -5,38 +5,55 @@ export default function ProductDetail() {
   return(
     <div>
       <ProductDetailContainer> 
-        <img src="/image/product_soap.jpg" alt="제품 이미지"></img>
+        <img src="/image/product_soap.jpg" alt="제품 이미지"></img> 
         <div>
           <ProductInfo>
             <TextSeller>우당탕탕 라이캣의 실험실</TextSeller>
             <TextProduct>Hack Your Life 개발자 노트북 파우치</TextProduct>
             <TextPrice>29,000 <span>원</span></TextPrice>
             <DeliveryInfo>택배배송 / 무료배송</DeliveryInfo>
-            <ButtonWrap>
-              <ButtonMinus type="button"></ButtonMinus>
-              <Quantity>1</Quantity>
-              <ButtonPlus type="button"></ButtonPlus>
-            </ButtonWrap>
-          <div>
+            <ButtonContainer>
+              <ButtonWrap>
+                <ButtonMinus type="button">
+                  <img src="/image/icon-minus-line.png"></img>
+                </ButtonMinus>
+                <Quantity>1</Quantity>
+                <ButtonPlus type="button"></ButtonPlus>
+              </ButtonWrap>
+            </ButtonContainer>
+          <ProductPrice>
             <p>총 상품 금액</p>
-            <p>총 수량 <span>1</span>개</p>
-            <p><span>17,500</span>원</p>
-          </div>
+            <PriceDetail>
+              <p>총 수량 <span>1</span>개</p>
+              <p><strong>17,500</strong>원</p>
+            </PriceDetail>
+          </ProductPrice>
+          <ShopButtonContainer>
+            <button type="button" class="button-shop">바로 구매</button>
+            <button type="button" class="button-basket">장바구니</button>
+          </ShopButtonContainer>
           </ProductInfo> 
         </div>
       </ProductDetailContainer>
+      <BottomNavContainer>
+        <button type="button">버튼</button>
+        <button type="button">리뷰</button>
+        <button type="button">Q&A</button>
+        <button type="button">반품/교환정보</button>
+      </BottomNavContainer>
     </div>
   )
 }
 
 const ProductDetailContainer = styled.section`
 display: flex;  
-justify-content: flex-start; 
+justify-content: space-between; 
 align-items: center;
-padding: 0 8%;  
+width: 100vw; 
+padding: 0 8%;   
   img {
-    width: 600px; 
-    height: 600px; 
+    width: 60vw; 
+    height: 80vh;  
   }
 `
 const TextSeller = styled.p`
@@ -64,12 +81,22 @@ const TextPrice = styled.p`
 const ProductInfo = styled.div`
 box-sizing: border-box; 
 padding-left: 50px; 
+width: 100%; 
 `
 const DeliveryInfo = styled.p`
   font-size: 16px; 
   color: #767676; 
 `
-
+const ButtonContainer = styled.div`
+width: 40vw; 
+height: 100px; 
+display: flex;
+flex-direction: column;  
+justify-content: center; 
+align-items: flex-start; 
+border-top: 1.5px solid #C4C4C4; 
+border-bottom: 1px solid #C4C4C4; 
+`
 const ButtonWrap = styled.div`
   display: flex; 
   width: 144px; 
@@ -78,15 +105,16 @@ const ButtonWrap = styled.div`
   overflow: hidden;
 `
 const ButtonMinus = styled.button`
+  background-color: black; 
   width: 48px; 
   height: 48px;   
-  background: transparent url("../../icon/icon-minus-line.svg") no-repeat 0 0 / contain; 
-  padding: 0; 
+  background: transparent url("../../icon/icon-minus-new.svg") no-repeat 0 0 / contain; 
+  padding: 0;  
 `
 const ButtonPlus = styled.button`
   width: 48px; 
   height: 48px;    
-  background: transparent url("../../icon/icon-plus-line.svg") no-repeat 0 0 / contain;  
+  background: transparent url("../../icon/icon-plus-new.svg") no-repeat 0 0 / contain;  
   padding: 0; 
 `
 const Quantity = styled.span`
@@ -96,4 +124,73 @@ const Quantity = styled.span`
   border-right: 1px solid #C4C4C4; 
   text-align: center; 
   line-height: 2.8; 
+`
+// 상품 가격
+const ProductPrice = styled.div`
+  display: flex; 
+  align-items: center;
+  width: 100%; 
+  justify-content: space-between; 
+  p {
+    font-size: 18px; 
+    color: #000; 
+  }
+`
+const PriceDetail = styled.div`
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  p {
+    font-size: 18px; 
+    color: #767676;  
+    span {  
+      font-weight: 700; 
+      color: #21BF48; 
+    }
+  }
+  strong {
+    color: #21BF48; 
+    font-weight: 700; 
+    font-size: 36px;  
+    margin-bottom: 5px; 
+  }
+`
+// 하단 버튼
+const ShopButtonContainer = styled.div`
+  display: flex; 
+  align-items: center; 
+  justify-content: space-between; 
+  width: 100%; 
+
+  button {
+    height: 60px; 
+    border-radius: 5px; 
+    font-size: 18px; 
+    color: #FFF; 
+    font-weight: 700; 
+  }
+  .button-shop {
+    width: 60%; 
+    background-color: #21BF48; 
+  }
+  .button-basket {
+    width: 35%;  
+    background-color: #767676;
+  }
+`
+
+const BottomNavContainer = styled.section`
+  width: 100vw;
+  padding: 0 8%;   
+  display: flex; 
+  align-items: center; 
+  
+  button {
+    width: 25%; 
+    height: 60px; 
+    font-size: 18px; 
+    color: #767676; 
+    background: #FFF; 
+    border-bottom: 3px solid #E0E0E0; 
+  }
 `
