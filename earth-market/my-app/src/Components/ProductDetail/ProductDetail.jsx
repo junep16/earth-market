@@ -8,15 +8,15 @@ export default function ProductDetail() {
         <img src="/image/product_soap.jpg" alt="제품 이미지"></img> 
         <div>
           <ProductInfo>
-            <TextSeller>우당탕탕 라이캣의 실험실</TextSeller>
-            <TextProduct>Hack Your Life 개발자 노트북 파우치</TextProduct>
-            <TextPrice>29,000 <span>원</span></TextPrice>
+            <div>
+              <TextSeller>우당탕탕 라이캣의 실험실</TextSeller>
+              <TextProduct>Hack Your Life 개발자 노트북 파우치</TextProduct>
+              <TextPrice>29,000 <span>원</span></TextPrice>
+            </div>
             <DeliveryInfo>택배배송 / 무료배송</DeliveryInfo>
             <ButtonContainer>
               <ButtonWrap>
-                <ButtonMinus type="button">
-                  <img src="/image/icon-minus-line.png"></img>
-                </ButtonMinus>
+                <ButtonMinus type="button"></ButtonMinus>
                 <Quantity>1</Quantity>
                 <ButtonPlus type="button"></ButtonPlus>
               </ButtonWrap>
@@ -59,8 +59,7 @@ padding: 0 8%;
 const TextSeller = styled.p`
   font-size: 16px; 
   color: #767676; 
-  line-height: 1.5; 
-  margin-top: 10px;
+  line-height: 1.5;  
 `
 const TextProduct = styled.p`
   font-size: 18px; 
@@ -77,12 +76,17 @@ const TextPrice = styled.p`
     font-weight: 500; 
   }
 `
-
+// 상품 내용
 const ProductInfo = styled.div`
+display: flex; 
+flex-direction: column; 
+justify-content: space-between; 
 box-sizing: border-box; 
 padding-left: 50px; 
 width: 100%; 
+height: 80vh;  
 `
+
 const DeliveryInfo = styled.p`
   font-size: 16px; 
   color: #767676; 
