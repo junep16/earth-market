@@ -88,6 +88,7 @@ height: 80vh;
 `
 
 const DeliveryInfo = styled.p`
+  margin-top: 50px;
   font-size: 16px; 
   color: #767676; 
 `
