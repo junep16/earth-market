@@ -113,13 +113,12 @@ const ButtonMinus = styled.button`
   background-color: black; 
   width: 48px; 
   height: 48px;   
-  background: transparent url("../../icon/icon-minus-new.svg") no-repeat 0 0 / contain; 
-  padding: 0;  
+  background: transparent url("/image/icon-minus-new.svg") no-repeat center / 20px;   
 `
 const ButtonPlus = styled.button`
   width: 48px; 
   height: 48px;    
-  background: transparent url("../../icon/icon-plus-new.svg") no-repeat 0 0 / contain;  
+  background: transparent url("/image/icon-plus-line.svg") no-repeat center / 20px;  
   padding: 0; 
 `
 const Quantity = styled.span`
