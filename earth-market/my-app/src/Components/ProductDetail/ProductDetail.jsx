@@ -13,14 +13,16 @@ export default function ProductDetail() {
               <TextProduct>Hack Your Life 개발자 노트북 파우치</TextProduct>
               <TextPrice>29,000 <span>원</span></TextPrice>
             </div>
-            <DeliveryInfo>택배배송 / 무료배송</DeliveryInfo>
-            <ButtonContainer>
-              <ButtonWrap>
-                <ButtonMinus type="button"></ButtonMinus>
-                <Quantity>1</Quantity>
-                <ButtonPlus type="button"></ButtonPlus>
-              </ButtonWrap>
-            </ButtonContainer>
+            <div>
+              <DeliveryInfo>택배배송 / 무료배송</DeliveryInfo>
+              <ButtonContainer>
+                <ButtonWrap>
+                  <ButtonMinus type="button"></ButtonMinus>
+                  <Quantity>1</Quantity>
+                  <ButtonPlus type="button"></ButtonPlus>
+                </ButtonWrap>
+              </ButtonContainer>
+            </div>
           <ProductPrice>
             <p>총 상품 금액</p>
             <PriceDetail>
@@ -35,12 +37,14 @@ export default function ProductDetail() {
           </ProductInfo> 
         </div>
       </ProductDetailContainer>
-      <BottomNavContainer>
-        <button type="button">버튼</button>
-        <button type="button">리뷰</button>
-        <button type="button">Q&A</button>
-        <button type="button">반품/교환정보</button>
-      </BottomNavContainer>
+      <BottomNavWrap>
+        <BottomNavButtonContainer>
+          <button type="button">상세</button>
+          <button type="button">리뷰</button>
+          <button type="button">Q&A</button>
+          <button type="button">반품/교환정보</button>
+        </BottomNavButtonContainer>
+      </BottomNavWrap>
     </div>
   )
 }
@@ -88,7 +92,7 @@ height: 80vh;
 `
 
 const DeliveryInfo = styled.p`
-  margin-top: 50px;
+  margin-bottom: 20px;
   font-size: 16px; 
   color: #767676; 
 `
@@ -146,7 +150,7 @@ const PriceDetail = styled.div`
   justify-content: center; 
   p {
     font-size: 18px; 
-    color: #767676;  
+    color: #767676; 
     span {  
       font-weight: 700; 
       color: #21BF48; 
@@ -157,6 +161,7 @@ const PriceDetail = styled.div`
     font-weight: 700; 
     font-size: 36px;  
     margin-bottom: 5px; 
+    margin-left: 20px; 
   }
 `
 // 하단 버튼
@@ -182,8 +187,16 @@ const ShopButtonContainer = styled.div`
     background-color: #767676;
   }
 `
+const BottomNavWrap = styled.section `
+  display: flex; 
+  flex-direction: column; 
+  justify-content: flex-start;
+  height: 50vh;
+  margin-top: 5vh; 
 
-const BottomNavContainer = styled.section`
+`
+
+const BottomNavButtonContainer = styled.section`
   width: 100vw;
   padding: 0 8%;   
   display: flex; 
@@ -196,5 +209,9 @@ const BottomNavContainer = styled.section`
     color: #767676; 
     background: #FFF; 
     border-bottom: 3px solid #E0E0E0; 
+  }
+  button:hover {
+    color: #21BF48; 
+    border-bottom: 3px solid #21BF48; 
   }
 `
