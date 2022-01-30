@@ -113,17 +113,22 @@ const ButtonWrap = styled.div`
   border-radius: 5px;
   overflow: hidden;
 `
-const ButtonMinus = styled.button`
-  background-color: black; 
+const ButtonMinus = styled.button` 
   width: 48px; 
   height: 48px;   
-  background: transparent url("/image/icon-minus-new.svg") no-repeat center / 20px;   
+  background: transparent url("/image/icon-minus-new.svg") no-repeat center / 20px;  
+  &:hover {
+    opacity: 0.3; 
+  } 
 `
 const ButtonPlus = styled.button`
   width: 48px; 
   height: 48px;    
   background: transparent url("/image/icon-plus-line.svg") no-repeat center / 20px;  
   padding: 0; 
+  &:hover {
+    opacity: 0.3; 
+  }
 `
 const Quantity = styled.span`
   width: 48px; 
@@ -181,10 +186,16 @@ const ShopButtonContainer = styled.div`
   .button-shop {
     width: 60%; 
     background-color: #21BF48; 
+    &:hover {
+    opacity: 0.3; 
+    }
   }
   .button-basket {
     width: 35%;  
     background-color: #767676;
+    &:hover {
+    opacity: 0.3; 
+    }
   }
 `
 const BottomNavWrap = styled.section `

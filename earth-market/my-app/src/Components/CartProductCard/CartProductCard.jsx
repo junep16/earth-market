@@ -29,12 +29,14 @@ export default function CartProductCard() {
           <p>17,500원</p>
           <button type="button">주문하기</button>
         </PriceWrap>
+        <DeleteButton type="button"></DeleteButton>
       </ProductDetail>
     </div>
   )
 }
 
 const ProductDetail = styled.form`
+  position: relative; 
   display: grid; 
   grid-template-columns: 0.5fr 4fr 2fr 2fr; 
   align-items: center; 
@@ -99,17 +101,22 @@ const ButtonWrap = styled.div`
   border-radius: 5px;
   overflow: hidden;
 `
-const ButtonMinus = styled.button`
-  background-color: black; 
+const ButtonMinus = styled.button` 
   width: 48px; 
   height: 48px;   
-  background: transparent url("/image/icon-minus-new.svg") no-repeat center / 20px;   
+  background: transparent url("/image/icon-minus-line.svg") no-repeat center / 20px;  
+  &:hover {
+    opacity: 0.3; 
+  } 
 `
 const ButtonPlus = styled.button`
   width: 48px; 
   height: 48px;    
   background: transparent url("/image/icon-plus-line.svg") no-repeat center / 20px;  
   padding: 0; 
+  &:hover {
+    opacity: 0.3; 
+  }
 `
 const Quantity = styled.span`
   width: 48px; 
@@ -137,6 +144,18 @@ const PriceWrap = styled.div`
     border-radius: 5px; 
   }
   button:hover {
+    opacity: 0.3; 
+  }
+`
+
+const DeleteButton = styled.button`
+  position: absolute; 
+  width: 20px; 
+  height: 20px;   
+  background: transparent url("/image/icon-delete.svg") no-repeat center / 20px;   
+  top: 20px; 
+  right: 20px; 
+  &:hover {
     opacity: 0.3; 
   }
 `

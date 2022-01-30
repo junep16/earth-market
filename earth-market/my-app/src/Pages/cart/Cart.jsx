@@ -5,11 +5,11 @@ import GlobalFonts from "fonts/GlobalStyle";
 
 export default function Cart() {   
   return (
-  <div>
-    <GlobalFonts /> 
-    <Navigation></Navigation>  
-    <CartContainer></CartContainer>
-    <Footer></Footer>
-  </div>
+    <div>
+      <GlobalFonts /> 
+      <Navigation></Navigation>  
+      <CartContainer></CartContainer>
+      <Footer></Footer>
+    </div>
   );
 }
