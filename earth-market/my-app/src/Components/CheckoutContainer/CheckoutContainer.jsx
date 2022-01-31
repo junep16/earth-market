@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";  
 import CheckoutMenuHead from "Components/CheckoutMenuHead/CheckoutMenuHead";
 import CheckoutProductCard from "Components/CheckoutProductCard/CheckoutProductCard"; 
+import CheckoutForm from "Components/CheckoutForm/CheckoutForm"; 
 
 export default function CheckoutContainer() {
   return(
@@ -11,6 +12,7 @@ export default function CheckoutContainer() {
         <form>
           <CheckoutMenuHead></CheckoutMenuHead>
           <CheckoutProductCard></CheckoutProductCard>
+          <CheckoutForm></CheckoutForm>
         </form>
       </CheckoutContainerWrap>
     </div>
