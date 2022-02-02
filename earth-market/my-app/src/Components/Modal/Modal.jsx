@@ -5,17 +5,22 @@ export default function Modal() {
   return (
     <div>
       <ModalContainer>
-        <Modals>
+        <div>
           <p>상품을 삭제하시겠습니까?</p>
-          <button type="button">취소</button>
-          <button type="button">확인</button>
-        </Modals>
+          <ButtonContainer>
+            <button type="button">취소</button>
+            <button type="button">확인</button>
+          </ButtonContainer>
+        </div>
       </ModalContainer>
     </div>
   )
 }
 
 const ModalContainer = styled.div`
+  display: flex;
+  flex-direction: column; 
+  text-align: center;
   position: fixed; 
   top: 50%; 
   left: 50%; 
@@ -24,16 +29,32 @@ const ModalContainer = styled.div`
   height: 200px; 
   background: #FFF; 
   border: 1px solid #C4C4C4; 
-  border-radius: 5px;
-`
-const Modals = styled.div`
+  border-radius: 5px; 
+
+  p {
+    line-height: 4; 
+  }
+` 
+const ButtonContainer = styled.div`
   display: flex; 
-  flex-direction: column; 
-  justify-content: center; 
+  justify-content: space-between; 
   align-items: center; 
+  width: 210px; 
   
   button {
-    display: inline;
-  }
+    width: 100px; 
+    height: 40px;  
 
+    &:first-child {
+      border: 1px solid #C4C4C4; 
+      border-radius: 5px; 
+      color: #767676; 
+      background-color: #FFF; 
+    }
+    &:nth-child(2) {
+      background-color: #21BF48; 
+      color: #FFF; 
+      border-radius: 5px; 
+    }
+  }
 `
