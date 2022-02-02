@@ -3,6 +3,7 @@ import styled from "styled-components";
 import CheckoutMenuHead from "Components/CheckoutMenuHead/CheckoutMenuHead";
 import CheckoutProductCard from "Components/CheckoutProductCard/CheckoutProductCard"; 
 import CheckoutForm from "Components/CheckoutForm/CheckoutForm"; 
+import Modal from "Components/Modal/Modal"; 
 
 export default function CheckoutContainer() {
   return(
@@ -15,6 +16,7 @@ export default function CheckoutContainer() {
           <CheckoutForm></CheckoutForm>
         </form>
       </CheckoutContainerWrap>
+      <Modal></Modal>
     </div>
   ) 
 }
