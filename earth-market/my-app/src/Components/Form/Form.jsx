@@ -6,12 +6,7 @@ import JoinForm from "Components/JoinForm/JoinForm";
 
 export default function Form() {
   return(
-    <div> 
-      <ButtonWrap>
-        <LoginButton type="button">구매회원 로그인</LoginButton>
-        <JoinButton type="button">판매회원 로그인</JoinButton>
-      </ButtonWrap>  
-      {/* <LoginForm></LoginForm> */}
+    <div>   
       <JoinForm></JoinForm>
       <Navigation>
         <a href="넣기">회원가입</a>
@@ -21,29 +16,6 @@ export default function Form() {
   )
 }
 
-const ButtonWrap = styled.div`
-  position:relative; 
-  height: 30%;  
-`
-const LoginButton = styled.button`
-  position: absolute; 
-  top: 40px; 
-  width: 250px; 
-  height: 80px; 
-  background-color: #FFF; 
-  border-radius: 10px; 
-  border: 1px solid #C4C4C4; 
-`
-const JoinButton = styled.button`
-  position: absolute; 
-  top: 40px; 
-  left: 250px;
-  width: 250px; 
-  height: 80px; 
-  background-color: #F2F2F2; 
-  border-radius: 10px; 
-  border: 1px solid #C4C4C4; 
-`
 const Navigation = styled.div`
   display: flex; 
   width: 500px; 

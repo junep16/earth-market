@@ -16,13 +16,12 @@ export default function Join() {
 
 const JoinSection = styled.section`
   width: 100vw;  
-  height: 100vh; 
   background: #FFF; 
-  padding: 0 8%; 
+  padding: 5% 8%; 
   display: flex; 
   flex-direction: column;
   justify-content: center;  
-  align-items: center; 
+  align-items: center;  
   
   img {
     width: 340px;  

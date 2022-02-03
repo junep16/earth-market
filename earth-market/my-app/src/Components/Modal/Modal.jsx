@@ -12,6 +12,7 @@ export default function Modal() {
             <button type="button">확인</button>
           </ButtonContainer>
         </div>
+        <DeleteButton type="button"></DeleteButton>
       </ModalContainer>
     </div>
   )
@@ -20,6 +21,8 @@ export default function Modal() {
 const ModalContainer = styled.div`
   display: flex;
   flex-direction: column; 
+  justify-content: center;
+  align-items: center; 
   text-align: center;
   position: fixed; 
   top: 50%; 
@@ -32,7 +35,7 @@ const ModalContainer = styled.div`
   border-radius: 5px; 
 
   p {
-    line-height: 4; 
+    margin-bottom: 40px; 
   }
 ` 
 const ButtonContainer = styled.div`
@@ -56,5 +59,16 @@ const ButtonContainer = styled.div`
       color: #FFF; 
       border-radius: 5px; 
     }
+  }
+`
+const DeleteButton = styled.button`
+  position: absolute; 
+  width: 20px; 
+  height: 20px;   
+  background: transparent url("/image/icon-delete.svg") no-repeat center / 20px;   
+  top: 20px; 
+  right: 20px; 
+  &:hover {
+    opacity: 0.3; 
   }
 `
