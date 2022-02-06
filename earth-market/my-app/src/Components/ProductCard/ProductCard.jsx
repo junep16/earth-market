@@ -1,7 +1,11 @@
 import React from "react";
 import styled from "styled-components";
 
+// functions 
+
+
 export default function ProductCard() {
+  // function 호출... 
   return (
     <div> 
       <Card>

@@ -1,6 +1,5 @@
 import React from "react";
-import styled from "styled-components";
-// import { BrowserRouter, Route } from "react-router-dom";
+import styled from "styled-components"; 
 import LoginForm from "Components/LoginForm/LoginForm"; 
 import JoinForm from "Components/JoinForm/JoinForm"; 
 
@@ -8,6 +7,7 @@ export default function Form() {
   return(
     <div>   
       <JoinForm></JoinForm>
+      {/* <LoginForm></LoginForm> */}
       <Navigation>
         <a href="넣기">회원가입</a>
         <a href="넣기">로그인</a>

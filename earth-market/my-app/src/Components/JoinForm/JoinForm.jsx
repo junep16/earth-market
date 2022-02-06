@@ -18,10 +18,7 @@ export default function LoginForm() {
         <input type="text" id="input-name"></input> 
         <PhoneNumberContainer> 
           <label for="input-phone">휴대폰 번호</label>
-          <button  class="button-phone" type="button">010</button>
-          <ul>
-            <li></li>
-          </ul> 
+          <button  class="button-phone" type="button">010</button> 
           <input type="text" id="input-phone"></input>
           <input type="text" id="input-phone"></input>
         </PhoneNumberContainer>
@@ -106,6 +103,9 @@ const PhoneNumberContainer = styled.div`
     margin: 0; 
     width: 140px; 
   }
+  /* input:focus { 
+    border: 1px solid #21BF48; 
+  } */
 `
 
 const EmailContainer = styled.div`
