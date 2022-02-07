@@ -11,7 +11,7 @@ export const ProductStore = (props) => {
 
   return (
     <ProductContext.Provider value={products}>{props.children}</ProductContext.Provider>
-  )
+  ); 
 }
 
 export default ProductStore; 

@@ -1,1 +1,2 @@
 export const API_ENDPOINT = 'http://13.209.150.154:8000';
+export const TOKEN = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJlbWFpbCI6IiIsInVzZXJuYW1lIjoiYnV5ZXIxIiwiZXhwIjoxNjQ0ODQ0NTkzfQ.4tEJRjannPEQoVeQ6i_q-DQqLznxdBy38SxD7YIL2sw"; 
