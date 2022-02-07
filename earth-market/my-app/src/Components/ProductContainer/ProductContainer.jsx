@@ -1,7 +1,7 @@
 import React, { useContext } from "react";  
 import styled from "styled-components";
 import ProductCard from "Components/ProductCard/ProductCard";
-import { ProductStore } from "../Store/product"; 
+import ProductStore from "../Store/product";
 
 
 export default function ProductContainer() {
