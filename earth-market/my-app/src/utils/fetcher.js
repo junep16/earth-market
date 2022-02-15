@@ -1,4 +1,3 @@
-import axios from 'axios'; 
-import { API_ENDPOINT } from '../constants';
+import axios from 'axios';  
 
-export const fetcher = (url: string) => axios.get(url).then(res => res.data);
+export const fetcher = (url) => axios.get(url).then(res => res.data);

@@ -1,20 +1,18 @@
-import React from "react";
-import styled from "styled-components";
-
-// functions 
-
+import React, { useContext } from "react";
+import styled from "styled-components"; 
+import { ProductContext } from "Store/product";
 
 export default function ProductCard() {
-  // function 호출... 
+  const product = useContext(ProductContext);  
   return (
     <div> 
       <Card>
         <ImageWrap>
           <img src="/image/01_sky.jpg" alt="제품이미지"></img>
         </ImageWrap>
-          <TextSeller>우당탕탕 라이캣의 실험실</TextSeller>
-          <TextProduct>Hack Your Life 개발자 노트북 파우치</TextProduct>
-          <TextPrice>29,000 <span>원</span></TextPrice>
+          <TextSeller>{product.company}</TextSeller>
+          <TextProduct>{product.name}</TextProduct>
+          <TextPrice>{product.price}<span>원</span></TextPrice>
       </Card>
     </div> 
   );
