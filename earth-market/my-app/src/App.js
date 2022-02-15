@@ -5,7 +5,7 @@ import Cart from "Pages/cart/Cart";
 import Checkout from "Pages/checkout/Checkout"; 
 import GlobalStyle from "fonts/GlobalStyle"; 
 import { BrowserRouter, Route } from "react-router-dom";
-import ProductStore from "store/product"; 
+import ProductStore from "Store/product"; 
 
 function App() {
   return ( 
