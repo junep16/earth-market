@@ -6,14 +6,16 @@ import { API_ENDPOINT } from 'Constants/api';
 export const ProductContext = createContext(); 
 export const ProductStore = (props) => {
 
+
   axios.get(API_ENDPOINT + '/products')
     .then((response) => {
       const result = (response.data.results); 
       console.log(result); 
+      for(let i=0; i > result.length; i++) {
+        
+      }
     }); 
-    // for(let i=0; i > result.length; i++) {
-
-    // }
+    
   const products = {
     name : "book", 
     company: "제코베", 
